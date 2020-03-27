@@ -22,7 +22,7 @@ PART 1 OUTPUT:
   0,20,1,2,22,21,9,16,24,19,18
   Current node is: 6
   Current node's neighbors are:
-  10,11,15,20,23,3,4,22
+  10,11,15,20,23,3,4,22 
   Current node is: 7
   Current node's neighbors are:
   2,6,15,10,24,0,21,18
