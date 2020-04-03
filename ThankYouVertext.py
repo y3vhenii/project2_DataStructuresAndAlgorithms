@@ -1,7 +1,7 @@
 #
 # Created by: Yevhenii Ganusich
 # IMPORTANT NOTE: Please run this script using python Graph.py and NOT python3 Graph.py to avoid any compilation errors.
-# The tests for all the functions are in Main
+# The tests for all the functions are in main
 #
 
 import random
