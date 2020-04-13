@@ -1,7 +1,8 @@
 # project2_DataStructuresAndAlgorithms
 Project 2: Graphs and Graph Traversals  
-Part 1 file contains tests in the main, so I didn't upload pictures.  
-ThankYouVetext.py includes code for #4 of the project (includes tests in main)    
-Dijkstras.py includes answers to #5 of the project (includes tests in main)   
-AStar.py includes answers to #6 of the project (includes tests in main)    
-NOTE: Please compile using python filename.py and NOT python3 filename.py
+*** BEFORE CODE REVIEW ***  
+part1.py includes answers to #3 of the project before code review   
+ThankYouVetext.py includes answers to #4 of the project before code review   
+Dijkstras.py includes answers to #5 of the project before code review   
+AStar.py includes answers to #6 of the project before code review   
+*** AFTER CODE REVIEW *** 
