@@ -1,5 +1,5 @@
 # project2_DataStructuresAndAlgorithms
-Project 2: Graphs and Graph Traversals  
+PROJECT 2: GRAPHS AND GRAPH TRAVERSALS 
 *** BEFORE CODE REVIEW ***  
 part1.py includes answers to #3 of the project before code review   
 ThankYouVetext.py includes answers to #4 of the project before code review   
