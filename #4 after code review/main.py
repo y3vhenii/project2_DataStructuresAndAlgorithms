@@ -14,16 +14,16 @@ def createRandomDAGIter(n):
     for node in newGraph.vertices:
         randomVertices = set()
         # Generate 2 random numbers which will represent direction up and right
-        neighborNode1 = random.randint(node.val, len(newGraph.vertices) - 1)
-        neighborNode2 = random.randint(node.val, len(newGraph.vertices) - 1)
+        neighborNodeIndex1 = random.randint(node.val, len(newGraph.vertices) - 1)
+        neighborNodeIndex2 = random.randint(node.val, len(newGraph.vertices) - 1)
         # If number generated is not being used yet and it doesn't represent node.val
-        if node.val != neighborNode1 and neighborNode1 not in randomVertices:
-            newGraph.addDirectedEdge(newGraph.vertices[node.val], newGraph.vertices[neighborNode1])
-            randomVertices.add(neighborNode1)
+        if node.val != neighborNodeIndex1 and neighborNodeIndex1 not in randomVertices:
+            newGraph.addDirectedEdge(newGraph.vertices[node.val], newGraph.vertices[neighborNodeIndex1])
+            randomVertices.add(neighborNodeIndex1)
         # If second number generated is not being used yet and it doesn't represent node.val
-        if node.val != neighborNode2 and neighborNode2 not in randomVertices:
-            newGraph.addDirectedEdge(newGraph.vertices[node.val], newGraph.vertices[neighborNode2])
-            randomVertices.add(neighborNode2)
+        if node.val != neighborNodeIndex2 and neighborNodeIndex2 not in randomVertices:
+            newGraph.addDirectedEdge(newGraph.vertices[node.val], newGraph.vertices[neighborNodeIndex2])
+            randomVertices.add(neighborNodeIndex2)
 
     return newGraph
 

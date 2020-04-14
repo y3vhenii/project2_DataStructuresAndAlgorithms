@@ -6,8 +6,7 @@ class DirectedGraph:
         self.vertices = list()
 
     def addNode(self, nodeVal):
-        newNode = GraphNode(nodeVal)
-        self.vertices.append(newNode)
+        self.vertices.append(GraphNode(nodeVal))
 
     def addDirectedEdge(self, firstNode, secondNode):
         # Retrieve the indexes of both nodes within the list

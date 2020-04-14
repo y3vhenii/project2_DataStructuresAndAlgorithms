@@ -1,5 +1,4 @@
-import random
-import sys
+import random, sys
 from weightedGraph import WeightedGraph
 
 
@@ -44,7 +43,7 @@ def dijkstras(start):
 def createRandomCompleteWeightedGraph(n):
     # Create and populate the graph
     newGraph = WeightedGraph()
-    for k in range(0, n):
+    for k in range(n):
         newGraph.addNode(k)
 
     # Create edges between all the nodes in the graph
@@ -59,16 +58,12 @@ def createRandomCompleteWeightedGraph(n):
 # This function creates a linked list graph of size n
 def createLinkedList(n):
     newGraph = WeightedGraph()
-    for i in range(0, n):
-        # If graph is empty
-        if i == 0:
-            newGraph.addNode(i)
+    for i in range(n):
+        newGraph.addNode(i)
         # If graph is not empty
-        else:
-            newGraph.addNode(i)
+        if i != 0:
             # Link the previous node to the last node
             newGraph.addWeightedEdge(newGraph.vertices[i-1], newGraph.vertices[i], 1)
-
     return newGraph
 
 
@@ -78,12 +73,14 @@ def printGraph(graph):
         print("Current vetex: " + str(vertex.val))
         for neighbor in vertex.neighbors:
             print("Neighbor: " + str(neighbor.destination.val) + " Distance: " + str(neighbor.weight))
+    print(" ")
 
 
 def printDijkstras(dict):
     # Print the results
     for key, value in dict.items():
         print("The minimum distance from 0 to " + str(key.val) + " is " + str(value))
+    print(" ")
 
 
 if __name__ == "__main__":
@@ -95,8 +92,6 @@ if __name__ == "__main__":
     # Return the dictionary with shortest paths and print
     dijkstraAnswer = dijkstras(graph.vertices[0])
     printDijkstras(dijkstraAnswer)
-    print("########################## END OF DIJKSTRA'S FOR LINKED LIST TEST ##########################")
-    print(" ")
     print("##################### DIJKSTRA'S FOR RANDOM COMPLETE GRAPH TEST (Size 5) ###################")
     # Create a random complete weighted graph
     graph1 = createRandomCompleteWeightedGraph(5)
@@ -104,4 +99,3 @@ if __name__ == "__main__":
     # Return the dictionary with shortest paths and print
     dijkstraAnswer = dijkstras(graph1.vertices[0])
     printDijkstras(dijkstraAnswer)
-    print("########################## END OF DIJKSTRA'S FOR RANDOM COMPLETE GRAPH TEST ##########################")

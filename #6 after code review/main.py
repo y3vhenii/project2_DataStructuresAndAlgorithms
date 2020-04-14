@@ -1,5 +1,4 @@
-import random
-import sys
+import random, sys
 from gridGraph import GridGraph
 
 
