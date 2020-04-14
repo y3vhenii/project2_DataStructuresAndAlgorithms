@@ -71,4 +71,3 @@ class TopSort:
                 self.mDfsHelper(neighbor, stack)
         # After calling modifiedDfsHelper on ALL neighbors, add the original node to the output stack.
         stack.append(node)
-

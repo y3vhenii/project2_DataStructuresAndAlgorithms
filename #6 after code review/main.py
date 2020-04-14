@@ -121,3 +121,4 @@ if __name__ == "__main__":
     else:
         print(" => ".join("[X:" + str(every.x) + " Y:" + str(every.y) + "]" for every in list1))
 
+
